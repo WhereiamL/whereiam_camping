@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Akrobat-Bold';
+    src: url('../fonts/Akrobat-Bold.ttf') format('truetype');
+}
+
+body{
+    font-family: 'Akrobat-Bold';
+/*     background-color:wheat; */
+    overflow: hidden;
+  /*   display: none; */
+}
+
+.glavni-float{
+    position: relative;
+    float: right;
+    right: 23vh;
+    top: 30vh;
+}
+
+.float-dugmad{
+    position: relative;
+    float: left;
+}
+
+
+.dugme-float{
+/*     top: -7vh;
+    left: 28.7vh;
+    position: relative;
+    float: left; */
+}
+
+.main-flw{
+    height: 38vh;
+    width: 32vh;
+    margin-right: 5vh;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.auta-dugme{
+    z-index: 1;
+    width: 30vh;
+    height: 5vh;
+    margin-bottom: 0.5vh;
+    cursor: pointer;
+    outline: none;
+    background-color: #2e2e33c4;
+    border-radius: .4vh;
+    transition: all ease-in-out 0.2s;
+}
+
+.auta-dugme:hover{
+    z-index: 1;
+    transition: all 0.3s ease;
+    background-color: #ff5500cd;
+    transform: scale(1.02);
+    transition: all ease-in-out 0.2s;
+}
+
+
+.auta-text-1{
+    padding-left: 2.5vh;
+    padding-right: 1.5vh;
+    padding-top: 1.3vh;
+    font-family: Akrobat-Bold;
+}
+
+.auta-text-2{
+    float: left;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.7vh;
+}
+
+.auta-text-3{
+    float: right;
+    direction: ltr;
+
+    color: white;
+    font-size: 1.7vh;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: .7vh;
+    height: .5vh;
+    background: #2c2c2cb3;  
+/*   z-index: 999; */
+}
+    
+::-webkit-scrollbar-thumb {
+    background: #ff5500cd;  
+    border-radius: .2vh;
+    /*   z-index: 999; */
+}
+    
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;  
+    /*   z-index: 999; */
+}
