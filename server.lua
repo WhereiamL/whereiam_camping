@@ -15,15 +15,18 @@ end)
 --Instance stuff
 RegisterServerEvent("instanceIn")
 AddEventHandler("instanceIn", function(player)
-	Player(source).state.instance = player
-	TriggerClientEvent("instancePlayer", player)
+	source = source
+	SetPlayerRoutingBucket(source, player)
+    TriggerClientEvent("instancePlayer", player)
 end)
 
 RegisterServerEvent("leaveInstance")
 AddEventHandler("leaveInstance", function(source)
-	Player(source).state.instance = nil
-	TriggerClientEvent("instanceLeft", source)
+	source = source
+	SetPlayerRoutingBucket(source, 0)
+    TriggerClientEvent("instaceLeaved", source)
 end)
+
 --end of instance
 
 --Stash
